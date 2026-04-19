@@ -3,21 +3,21 @@ import { Fraunces, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const fraunces = Fraunces({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-heading",
   display: "swap",
 });
 
 const hanken = Hanken_Grotesk({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-body",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Personalized Dental Care in Chicago, IL | 6 Corners Dental Studio",
+  title: "Vrhunska Stomatološka Nega u Beogradu | Moj Flow Dent",
   description:
-    "Discover compassionate, judgment-free dental care in Portage Park, Chicago. Book your visit with Dr. Hong at 6 Corners Dental Studio today.",
+    "Otkrijte saosećajnu stomatološku negu bez osude u srcu Beograda. Zakažite posetu kod dr. Hong u Moj Flow Dent danas.",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="sr-Latn">
       <body className={`${fraunces.variable} ${hanken.variable} antialiased`}>
         {children}
       </body>

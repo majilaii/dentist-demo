@@ -25,6 +25,11 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id],
+header[id] {
+  scroll-margin-top: 5rem;
+}
+
 body {
   margin: 0;
   background: var(--color-neutral-lightest);
